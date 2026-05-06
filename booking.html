@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book a Visit | Mudi Vet</title>
+    <meta
+      name="description"
+      content="Book a clinic appointment or home veterinary visit with Mudi Veterinary Clinic."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Mudi Vet home">
+        <img src="assets/mudi-vet-logo.jpg" alt="Mudi Veterinary Clinic logo">
+        <span>Mudi Vet</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#hours">Hours</a>
+        <a href="booking.html" aria-current="page">Bookings</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="booking-hero">
+        <p class="eyebrow">Bookings</p>
+        <h1>Request a clinic appointment or home visit.</h1>
+        <p>
+          Complete the form and your email app will open with a prepared booking
+          request addressed to Mudi Vet.
+        </p>
+      </section>
+
+      <section class="section booking-layout">
+        <form class="booking-form" id="booking-form">
+          <label>
+            Full name
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+
+          <label>
+            Phone number
+            <input name="phone" type="tel" autocomplete="tel" required>
+          </label>
+
+          <label>
+            Email address
+            <input name="email" type="email" autocomplete="email">
+          </label>
+
+          <div class="form-row">
+            <label>
+              Preferred date
+              <input name="date" type="date" required>
+            </label>
+
+            <label>
+              Preferred time
+              <input name="time" type="time" min="08:00" max="17:00" required>
+            </label>
+          </div>
+
+          <label>
+            Appointment type
+            <select name="visitType" required>
+              <option value="">Select an option</option>
+              <option>Clinic visit</option>
+              <option>Emergency home visit within 10km</option>
+              <option>Farm or herd visit</option>
+              <option>Corporate animal care consultation</option>
+            </select>
+          </label>
+
+          <label>
+            Animal or service needed
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Preventive care</option>
+              <option>Diagnostic services</option>
+              <option>Treatment and surgery</option>
+              <option>Reproductive and herd health</option>
+              <option>Poultry and small animal care</option>
+              <option>Community or extension service</option>
+              <option>Companion animal extras</option>
+              <option>Emergency or urgent consultation</option>
+            </select>
+          </label>
+
+          <label>
+            Location or address
+            <input name="location" type="text" placeholder="Required for home or farm visits">
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us about the animal, symptoms, number of animals, or visit details."></textarea>
+          </label>
+
+          <button class="button button-primary" type="submit">Send Booking Request</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="booking-sidebar">
+          <img src="assets/mudi-vet-logo.jpg" alt="Mudi Veterinary Clinic logo">
+          <h2>Clinic details</h2>
+          <p><strong>Hours:</strong> Monday to Sunday, 8am-5pm</p>
+          <p><strong>Emergency home visits:</strong> available within a 10km radius</p>
+          <p><strong>Location:</strong> Chitipi along Mchiji Road, at Likuni turn off</p>
+          <p><strong>Phone:</strong> <a href="tel:+265999954766">+265 9999 54 766</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+265885893650">+265 8858 93650</a></p>
+          <p><strong>Email:</strong> <a href="mailto:mudivet@outlook.com">mudivet@outlook.com</a></p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/mudi-vet-logo.jpg" alt="Mudi Veterinary Clinic logo">
+      <p>Mudi Veterinary Clinic. We care.</p>
+    </footer>
+  </body>
+</html>

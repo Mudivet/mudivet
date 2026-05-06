@@ -1,16 +1,15 @@
-## Hi there 👋
+# Mudi Vet Static Website
 
-<!--
-**Mudivet/mudivet** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is a GitHub Pages-ready static landing page for Mudi Veterinary Clinic.
 
-Here are some ideas to get you started:
+## Files
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- `index.html` - landing page with about, services, hours, contact, and location sections.
+- `booking.html` - booking form that opens a prefilled email to `mudivet@outlook.com`.
+- `styles.css` - responsive white and `#89066f` theme.
+- `script.js` - hamburger menu and booking email composition.
+- `assets/mudi-vet-logo.jpg` - clinic logo used throughout the site.
+
+## GitHub Pages
+
+Publish from the repository root using GitHub Pages. No build step is required.
